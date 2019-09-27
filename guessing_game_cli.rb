@@ -1,7 +1,7 @@
 
 def run_guessing_game
   int = rand(1..6)
-  input = gets.chomp.strip
+  input = gets.strip.to_i
   if input == "exit"
     puts "Goodbye!"
   elsif input == int
